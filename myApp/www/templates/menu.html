@@ -1,0 +1,52 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content id="maincontent">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" id="left" width="275">
+    <ion-header-bar class="bar-stable" id="header">
+    	<div class="list" id="list">
+             <a class="item item-avatar" href="#" id="item" ng-click="login()">
+                 <img src="../img/head5.png" id="Headimg">
+                 <h2 id="name">Mr.Q</h2>
+                 <p>这是个只要有把剑，就能到达任何角落的世界。</p>
+            </a>
+    	</div>
+    </ion-header-bar>
+    
+    <ion-content id="content">
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+          主页
+        </ion-item>
+        <ion-item nav-clear menu-close href="#">
+          个人资料
+        </ion-item>
+        <ion-item nav-clear menu-close href="#">
+          我的评论
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/fabu">
+          我的帖子
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/search">
+          环行徽章兑换
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/browse">
+          个人勋章记录
+        </ion-item>
+        <ion-item nav-clear menu-close href="#">
+          个人设置
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
